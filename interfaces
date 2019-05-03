@@ -1,0 +1,14 @@
+#This file describes the network interfaces available on your system
+#and how to open them. For more information see interfaces(5)
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp4s1 
+iface enp4s1 inet static
+address 10.1.10.x
+network 10.1.10.0
+gateway 10.1.10.1
+dns-nameservers 8.8.8.8 
